@@ -1,2 +1,2 @@
-# js-trening
+# js-traning
 tasks
