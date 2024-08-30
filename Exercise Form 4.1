@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Exercise Form 4</h1>
+    <form id="myForm">
+        <label for="firstName">First Name:-</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your name" required><br><br>
+        
+        <label for="lastName">Last Name:-</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your surname" required><br><br>
+        
+        <label for="mobileNumber">Mobile Number:-</label>
+        <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile number" required><br><br>
+        
+        <label for="dob">Date of Birth:-</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <button type="button" id="addButton" onclick='call()'>Add</button>
+    </form>
+</body>
+</html>
+
+
+js:-
+
+let dateArray = [];
+
+function call() {
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const mobileNumber = document.getElementById('mobileNumber').value;
+    const dob = document.getElementById('dob').value;
+
+    if (!firstName) {
+        alert('First name is required.');
+        return;
+    }
+
+    if (firstName.length < 3) {
+        alert('First name must be at least 3 letters long.');
+        return;
+    }
+
+    if (mobileNumber && !/^[0-9]{10}$/.test(mobileNumber)) {
+        alert('If provided, mobile number must be exactly 10 digits.');
+        return;
+    }
+
+    if (dob) {
+        const dobDate = new Date(dob);
+        const today = new Date();
+        if (isNaN(dobDate.getTime()) || dobDate >= today) {
+            alert('If provided, date of birth must be a valid date in the past.');
+            return;
+        }
+    }
+
+    const formData = {
+        first_name: firstName,
+        last_name: lastName || null, // Set to null if not provided
+        mobile_number: mobileNumber || null, // Set to null if not provided
+        dob: dob || null // Set to null if not 
+    };
+
+    dateArray.push(formData);
+
+    console.log(dateArray);
+
+    document.getElementById('myForm').reset();
+
+    alert('Values inserted');
+}
