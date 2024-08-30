@@ -1,0 +1,11 @@
+function computeSum(array) {
+   
+    const total = array.reduce((number, addition) => number + addition, 0);
+    return total;
+}
+
+const scenario1 = [1, 2, 3, 43, 5];
+console.log(`Scenario 1 Total: ${computeSum(scenario1)}`);
+
+const scenario2 = [6, 4, 2, 8, 5];
+console.log(`Scenario 2 Total: ${computeSum(scenario2)}`);
