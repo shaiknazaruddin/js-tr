@@ -1,0 +1,9 @@
+var k = [9,3,6,3];
+console.log(arrSum(k))
+function arrSum(add) {
+    var sum = 0; 
+    for (var i = 0; i < add.length; i++) { 
+        sum += add[i]; 
+    }
+    return sum; 
+}
