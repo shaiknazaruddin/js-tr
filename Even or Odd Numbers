@@ -1,0 +1,19 @@
+var k = [3];
+console.log(evenOrOdd(k));
+
+function evenOrOdd(arr) {
+    var sum = arrSum(arr); 
+    if (sum % 2 === 0) {  
+        return 'even';
+    } else {             
+        return 'odd';
+        }
+        }
+
+function arrSum(add) {
+    var sum = 0; 
+    for (var i = 0; i < add.length; i++) { 
+        sum += add[i]; 
+    }
+    return sum
+}
