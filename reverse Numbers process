@@ -1,0 +1,23 @@
+seNumber(num) {
+  const numStr = num.toString();
+  
+  const reversedStr = numStr.split('').reverse().join('');
+ 
+  return parseInt(reversedStr, 10);
+}
+
+console.log(reverseNumber(456)); 
+console.log(reverseNumber(123434)); 
+
+
+
+Another Method :-
+
+let num1 =1234567;
+let num2 = 123456789;
+
+let result = num1.toString().split('').reverse().join('');
+let reverseNumber = num2.toString().split('').reverse().join('');
+
+console.log(result);
+console.log(reverseNumber);
