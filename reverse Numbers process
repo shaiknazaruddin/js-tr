@@ -1,4 +1,4 @@
-seNumber(num) {
+function reverseNumber(num) {
   const numStr = num.toString();
   
   const reversedStr = numStr.split('').reverse().join('');
