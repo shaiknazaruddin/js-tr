@@ -1,25 +1,14 @@
-function isPalindrome(str) {
-   
-    function cleanString(s) {
-        let cleaned = '';
-        for (let i = 0; i < s.length; i++) {
-            const char = s[i].toLowerCase();
-            if (char >= 'a' && char <= 'z' || char >= '0' && char <= '9') {
-                cleaned += char;
-            }
-        }
-        return cleaned;
-    }
-
-    const cleanedStr = cleanString(str);
-    const reversedStr = cleanedStr.split('').reverse().join('');
-
-    if (cleanedStr === reversedStr) {
-        return `${str} is a palindrome.`;
-    } else {
-        return `${str} is not a palindrome.`;
+function isPalindrome(string) {
+    var lowerStr = string.toLowerCase();
+    var revStr = lowerStr.split('').reverse().join('');
+    
+    if(revStr == lowerStr){
+    		return string + " is a palindrome";
+    }else {
+    		return string + " is not a palindrome"
     }
 }
 
-console.log(isPalindrome("madam, adam"));
+console.log(isPalindrome("Race car"));
 console.log(isPalindrome("The Man of Thunder")); 
+console.log(isPalindrome("Malayalam")); 
