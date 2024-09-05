@@ -1,5 +1,5 @@
 function isPalindrome(string) {
-    var lowerStr = string.toLowerCase();
+    var lowerStr = string.toLowerCase().reverseAll();
     var revStr = lowerStr.split('').reverse().join('');
     
     if(revStr == lowerStr){
