@@ -1,0 +1,144 @@
+HTML:-
+
+<!DOCTYPE html>
+<head>
+
+
+<style>
+body {
+
+}
+
+.table-container {
+margin: 40px;
+text-align: center;
+}
+
+table {
+width: 100%;
+margin: 0 auto;
+border-collapse: collapse;
+border: 2px solid #ddd;
+}
+
+th, td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+}
+
+th {
+background-color: #FFFF00;
+}
+
+.header {
+background-color: #FFFF00;
+font-weight: bold;
+}
+
+.highlight {
+background-color: #b73a3a;
+color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="table-container">
+<h2>AI&DS ONLINE TABLE</h2>
+<table>
+<tr class="header">
+<th colspan="5">AI&DS</th>
+</tr>
+<tr>
+<tr class=header"">
+<th colspan="5">Monday</th>
+</tr>
+<tr>
+<td>9:30-10:20</td>
+<td>10:30-11:20</td>
+<td>11:30-12:20</td>
+<td>12:30-1:20</td>
+</tr>
+<tr>
+<td>P&S</td>
+<td>DS</td>
+<td>PY</td>
+<td>NM</td>
+</tr>
+</table>
+</div>
+
+<div class="table-container">
+<h2>CSE-2 ONLINE TABLE</h2>
+<table>
+<tr class="header">
+<th colspan="5">CSE-2</th>
+</tr>
+<tr>
+<tr class="header">
+<th colspan="5">Monday</th>
+</tr>
+<tr>
+<td>9:30-10:20</td>
+<td>10:30-11:20</td>
+<td>11:30-12:20</td>
+<td>12:30-1:20</td>
+</tr>
+<tr>
+<td>PHY</td>
+<td class="highlight">DS</td>
+<td>P&S</td>
+<td>ENG</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
+
+
+
+CSS:-
+body {
+    background-color: green; /*
+}
+
+.table-container {
+    margin: 40px;
+    text-align: center;
+    background-color: white; 
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #FFFF00; 
+}
+
+.header {
+    background-color: #FFFF00; /* Yellow background for header rows*/
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #b73a3a; /* Red background for highlighted cells */
+    color: white;
+}
+
+/* Change the remaining white elements to green */
+td {
+    background-color: green; /* Set table cells to green */
+    color: white; 
+}
