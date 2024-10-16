@@ -81,3 +81,63 @@ input[type="submit"] {
 input[type="submit"]:{
     background-color: #0bdad0;
 }
+
+
+
+
+another:-
+<html>
+<body>
+
+
+        <h2> Address details</h2>
+       
+      
+
+       
+            <label for="fname">First name</label>
+            <input type="text" id="fname"name="firstname"><br></br>
+
+        
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lastname"><br></br>
+  
+            <label for="address">Address</label>
+            <textarea type="text" id="address" name="address"></textarea><br></br>
+
+            <label for="file">File button</label>
+            <input type="file" id="file" name="fileupload"><br></br>
+
+            <input class ='submit'type="submit" value="Submit">
+            </style>
+        
+</body>
+</html>
+
+CSS:-
+
+body {
+  background-color:green;
+   
+}
+h2 {
+  color: red; 
+} 
+}
+label{
+padding: 2rem 
+}
+textarea{
+  margin-left: 1rem
+  
+  }
+ .name{
+   margin-left: 11rem
+ } 
+.submit{
+  margin-left: 9rem
+
+ }
+ .submit{
+   background-color: blue
+ }
