@@ -2,6 +2,7 @@ HTML:-
 
 <html>
 <body>
+      <class="form-container">
       <h2>Address details</h2>
        
             <label for="fname">First name</label>
