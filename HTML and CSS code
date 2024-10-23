@@ -1,0 +1,44 @@
+<html>
+<body>
+    <h1 style="color: blue">
+        Bank PassBook Form
+    </h1>
+
+    <h2 style="color: green">
+    List Of Inputs in HTML </h2>
+
+    <input type="button">click Button if You agree<br><br>
+    
+    <input type="checkbox">Check If you are 18+<br><br>
+    
+    <input type="color">Choose the color of cloth<br><br>
+    
+    <input type="date">Choose Your birth date<br><br>
+   
+    <input type="email" placeholder="Enter Your Mail"><br><br>
+    
+    <input type="file">Input the required file<br><br>
+    
+    <input type="image">Input You Image<br><br>
+    
+    <input type="month">Month Of the applying<br><br>
+    
+    <input type="number" placeholder="Enter Your Age"><br><br>
+    
+   <input class="submit" type="submit" value="submit">
+    
+</body>
+</html>
+
+
+
+Css:-
+
+body{
+  
+background-color: yellow;
+}
+.submit{
+  background-color: blue;
+  color: white;
+}
